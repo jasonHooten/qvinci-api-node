@@ -1,8 +1,12 @@
 var QvinciAPI = require("../"),
-    expect = require("chai").expect;
+    expect = require("chai").expect,
+    /*
+    * Create a file called apiToken.js in this directory
+    * and export a variable called token
+    * e.g. module.exports.token = '...';
+    */
+    token = require("./apiToken").token;
 
-
-var token = '9781603b-5696-42c4-99e8-08722fa28d4b';
 
 describe('GET /echo/', function() {
     
