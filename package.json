@@ -17,6 +17,10 @@
     "dependencies":   {
         "request": "2.33.x"
     },
+    "devDependencies": {
+        "mocha": "1.16.x",
+        "chai": "~1.8.1"
+    },
     "author":         {
         "name":  "Jason Hooten",
         "email": "jasonh@qvinci.com",
