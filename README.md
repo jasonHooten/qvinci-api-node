@@ -5,22 +5,26 @@ Node.js SDK for Qvinci API
 
 Check out our full [Qvinci Api Docs].
 
-Installation
+Install
 --------------
 
-```sh
-git clone https://github.com/jasonHooten/qvinci-sdk-node.git
-cd qvinci-sdk-node
-npm install
-npm install -g mocha
-mocha
+Add the following dependency to your packages.json file.
+
+```json
+   "qvinci-sdk-node": "git+ssh://git@github.com:jasonHooten/qvinci-sdk-node.git",
 ```
 
-Example
+Then install via npm
+```sh
+npm install
+```
+
+
+Usage
 --------------
 
-```javascirpt
-var QvinciAPI = require("../");
+```js
+var QvinciAPI = require("qvinci-sdk-node");
 var token = 'XXXXXX'; //user your own token
  
 var api = new QvinciAPI.client(token),
@@ -31,5 +35,16 @@ api.get('/echo', echo, function(data){
 });
 ```
 
+Build
+--------------
 
-[Qvinci Api Docs]:https://qvinci.atlassian.net/wiki/pages/viewpage.action?pageId=8355859
+```sh
+git clone https://github.com/jasonHooten/qvinci-sdk-node.git
+cd qvinci-sdk-node
+npm install
+npm install -g mocha
+mocha
+```
+
+
+[Qvinci Api Docs]:https://qvinci.atlassian.net/wiki/pages/viewpage.action?pageId=15368202
